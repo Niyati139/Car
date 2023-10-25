@@ -1,0 +1,162 @@
+@font-face {
+   font-family: Delirium NCV;
+   src: url(./DELIRIUM\ NCV.woff2);
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    background: radial-gradient(#c1cac6 5%,#86B2A3,#86B2A3);
+}
+
+#main #nav #center{
+    top: 50%;
+    left:50%;
+    display: flex;
+    align-items: center;
+    gap:1vw;
+    position: absolute;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+ #nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    width: 100%;
+    height: 14vh;
+    /* background-color: red; */
+ }
+ #nav #center h3{
+    font-family: 'Delirium NCV';
+    font-size: 2.5vw;
+    font-weight: 100;
+ }
+ #nav i{
+    color: #fff;
+ }
+ #center .line{
+    width: 10vw;
+    height: 2px;
+    background-color:#799c90;
+
+ }
+ #maintext{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+ }
+ #maintext .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ #maintext .row h4{
+    font-family: 'Delirium NCV';
+    color: white;
+    font-size: 1.7vw;
+    font-weight: 100;
+ }
+ #maintext>h1{
+    font-family: 'Delirium NCV';
+    font-size: 12vw;
+    color: white;
+    line-height: 10vw;
+    font-weight: 100;
+ }
+ #maintext .row h4:nth-child(2){
+    color: #425951;
+ }
+ #main #one{
+    width:40vw;
+    position: absolute;
+    top:50%;
+    left:55%;
+    transform: translate(-50%,-50%);
+ }
+ #main #two{
+    width:20vw;
+    height: 22vw;
+    position: absolute;
+    top:50%;
+    left:-8%;
+    transform: translate(0%,-50%);
+ }
+ #main #three{
+    width:15vw;
+    height: 15vw;
+    position: absolute;
+    top:50%;
+    right:-5%;
+    transform: translate(0%,-50%);
+ }
+ #main #bottom{
+    width:50%;
+    height: 200px;
+    left: 50%;
+    top: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%,0);
+     /* background-color: red;     */
+ }
+ #bottom .li{
+    width: 35vw;
+    height: 3px;
+    top:70%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    background-color:#799c90;
+
+ }
+ button{
+    padding: .8vw 2.8vw;
+    top:90%;
+    position: absolute;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.656);
+    color: #425951;
+    font-weight: 300;
+    font-size: smaller;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    letter-spacing: .3vw;
+    border-radius: 100px;
+ }
+ button:hover{
+   cursor: pointer;
+   background-color: beige;
+ }
+
+ @media (max-width:500px) {
+   #nav{
+      height: 10vh;
+   }
+   
+ #nav #center h3{
+   font-size: 7.2vw;
+   font-weight: 200;
+ }
+   
+}
